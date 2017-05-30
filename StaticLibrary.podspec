@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'StaticLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of StaticLibrary.'
+  s.summary          = 'this is the summary description.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'i am the description.'
+  s.description      = 'i am the description.yes! it is too short.be longer.'
 
   s.homepage         = 'https://github.com/george-luofz/StaticLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   #   'StaticLibrary' => ['StaticLibrary/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/*.h'
+  s.public_header_files = 'StaticLibrary/Classes/*.h'
    s.frameworks = 'UIKit','Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

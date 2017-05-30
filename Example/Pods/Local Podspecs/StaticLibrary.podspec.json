@@ -1,0 +1,22 @@
+{
+  "name": "StaticLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of StaticLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/george-luofz/StaticLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "george-luofz": "luofuzhong@yixia.com"
+  },
+  "source": {
+    "git": "https://github.com/george-luofz/StaticLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "StaticLibrary/Classes/**/*"
+}

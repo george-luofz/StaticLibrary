@@ -1,0 +1,16 @@
+PODS:
+  - StaticLibrary (0.1.0)
+
+DEPENDENCIES:
+  - StaticLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  StaticLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  StaticLibrary: b493406a5743a7fce5b29564e700866a98832793
+
+PODFILE CHECKSUM: 018cbed0a18ab71cf13f330b49fcc7179861ea81
+
+COCOAPODS: 1.2.1
