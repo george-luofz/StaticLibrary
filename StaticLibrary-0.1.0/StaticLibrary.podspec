@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/george-luofz/StaticLibrary"
   s.description = "i am the description.yes! it is too short.be longer."
   s.frameworks = ["UIKit", "Foundation"]
-  s.source = { :path => 'https://github.com/george-luofz/StaticLibrary.git' }
+  s.source = { :path => '.' }
 
   s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework   = 'StaticLibrary.framework'
+  s.ios.vendored_framework   = 'ios/StaticLibrary.embeddedframework/StaticLibrary.framework'
 end

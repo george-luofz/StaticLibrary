@@ -28,13 +28,22 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'StaticLibrary/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'StaticLibrary' => ['StaticLibrary/Assets/*.png']
-  # }
-
-  s.public_header_files = 'StaticLibrary/Classes/*.h'
+#    $lib = ENV['use_lib']
+#    $lib_name = ENV["#{s.name}_use_lib"]
+#    if $lib || $lib_name
+    puts '---------binary-------'
+    s.ios.vendored_framework = "Framework/#{s.version}/#{s.name}.framework"
+    #这种是帮你打包成bundle
+#    s.resource_bundles = {
+#        "#{s.name}" => ["#{s.name}/Assets/*.{png,xib,plist}"]
+#    }
+#    #这种是你已经打包好了bundle，推荐这种，可以省去每次pod帮你生成bundle的时间
+#    s.resources = "#{s.name}/Assets/*.bundle"
+#    else
+#    puts '.......source........'
+#    s.source_files = "#{s.name}/Classes/**/*"
+#    s.resources = "#{s.name}/Assets/*.bundle"
+#    s.public_header_files = "#{s.name}/Classes/**/*.h"
    s.frameworks = 'UIKit','Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
